@@ -108,14 +108,13 @@ function Hero() {
             href="#contact"
             className="bg-brand-orange hover:bg-orange-600 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-orange/30 active:scale-95 text-sm md:text-base"
           >
-            Get Your Free Quote
+            Request a Quote
           </a>
           <a
-            href="tel:+263713472072"
+            href="#services"
             className="inline-flex items-center gap-2 border border-white/10 hover:border-brand-orange/40 text-gray-300 hover:text-white font-medium px-8 py-3.5 rounded-full transition-all text-sm md:text-base"
           >
-            <span className="text-brand-orange">📞</span>
-            24/7 Emergency Callout
+            View Services
           </a>
         </motion.div>
 

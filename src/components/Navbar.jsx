@@ -21,12 +21,15 @@ function Navbar() {
   }, []);
 
   return (
-    <nav
+    <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-brand-bg/90 glass border-b border-white/5 shadow-lg shadow-black/20"
           : "bg-transparent"
       }`}
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
@@ -36,6 +39,7 @@ function Navbar() {
           </span>
           <span className="font-bold text-base md:text-lg text-white">
             HubSoft <span className="text-brand-orange">Engineering</span>
+            <span className="block text-[10px] md:text-xs text-gray-500 font-normal leading-tight">Solutions</span>
           </span>
         </a>
 
@@ -135,7 +139,7 @@ function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 }
 
